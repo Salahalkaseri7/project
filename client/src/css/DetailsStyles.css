@@ -1,0 +1,311 @@
+.types_charts {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-left: 5%;
+
+
+
+
+}
+
+.diff_charts {
+  
+  
+  margin-left: 2%;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  height: 50px;
+
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  bottom: 0;
+  margin-bottom: 0%;
+
+}
+
+/* The popup form - hidden by default */
+.form-popup_regular {
+  display: none;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  width: 80%;
+  margin-left: 10%;
+
+
+
+}
+.form-popup_oxygen {
+  display: none;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  width: 80%;
+  margin-left: 10%;
+
+
+
+}
+.form-popup_ventilator {
+  display: none;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  width: 80%;
+  margin-left: 10%;
+
+
+
+}
+.form-popup_icu {
+  display: none;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  width: 80%;
+  margin-left: 10%;
+
+
+
+}
+/* Add styles to the form container */
+.form-container {
+  max-width: 240px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=number],
+.form-container input[type=email]
+{
+  width: 70%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.form-container input[type=email]{
+  padding-left: 20px;
+
+}
+.form-container input[type=radio]{
+  height: 20px;
+  width: 20px;
+
+}
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=number]:focus,
+.form-container input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  border-radius: 10px;
+  width: 100%;
+  height: 40px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+.floor {
+  border: 2px solid black;
+  margin-top: 30px;
+  height: 400px;
+  width: 400px;
+  align-self: center;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.room {
+  border: 2px solid black;
+  margin-top: 30px;
+  height: 150px;
+  width: 150px;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 10%;
+}
+
+.bed {
+  border: 2px solid black;
+  margin-top: 10px;
+  height: 50px;
+  width: 50px;
+
+
+}
+
+.booking {
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+.floor_plan {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+
+}
+
+.bed_arrangement {
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px;
+}
+
+.bed_item {
+  height: 40px;
+  width: 30px;
+  /* border: 2px solid black; */
+  margin-left: 35px;
+
+  margin-top: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+
+  margin-left: 2%;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+
+
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  
+
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.total_charts {
+  display: flex;
+  text-align: center;
+}
+
+.chart1{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+
+  text-align: center;
+  font-family: arial;
+  margin-left: 10%;
+  width: 650px;
+  height: 500px;
+  text-align: center;
+}
+.chart2{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  text-align: center;
+  font-family: arial;
+  margin-left: 2%;
+  
+  width: 650px;
+  height: 500px;
+  text-align: center;
+}
+
+
+.contact_form {
+
+  height: 650px;
+  min-width: 60%;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: arial;
+  margin-left: 80px;
+  margin-top: 40px;
+
+}
+.contact_form input[type=text],.contact_form input[type=email],.contact_form input[type=number],.contact_form{
+  width: 60%;
+
+}
+.contact_form input[type=email]{
+  margin-left: 20%;
+}
+.contact_form input[type=radio]{
+  width: 60px;
+  margin-left: 10%;
+}

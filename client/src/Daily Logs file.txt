@@ -1,0 +1,393 @@
+//unwanted elements for styling
+
+// .floor{
+//     border: 2px solid black;
+//     margin-top: 30px;
+//     height: 400px;
+//     width: 400px;
+//     align-self:center;
+//     display: grid;
+//     grid-template-columns: auto auto;
+//   }
+//   .room{
+//     border: 2px solid black;
+//     margin-top: 30px;
+//     height: 150px;
+//     width: 150px;
+//     display: grid;
+//     grid-template-columns: auto auto;
+//     margin-left: 10%;
+//   }
+//   .bed{
+//     border: 2px solid black;
+//     margin-top: 10px;
+//     height: 50px;
+//     width: 50px;
+  
+  
+//   }
+//   .booking{
+//     text-align: center;
+//     align-items: center;
+//     align-self: center;
+//     align-content: center;
+//   }
+//   .floor_plan{
+//     display: grid;
+//     grid-template-columns: auto auto;
+//     text-align: center;
+  
+//   }
+
+
+//deleting regular beds
+                        <PieChart width={400} height={300}>
+                            <Pie
+                                data={total_data}
+                                cx="33%"
+                                cy="30%"
+                                labelLine={false}
+                                label={renderCustomizedLabel}
+                                outerRadius={80}
+                                fill="#8884d8"
+                                dataKey="value"
+                            >
+                                {total_data.map((entry, index) => (
+                                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                ))}
+                            </Pie>
+                            <Tooltip />
+                        </PieChart>
+
+
+                        <PieChart width={400} height={400}>
+                            <Pie
+                                data={total_data}
+                                cx="30%"
+                                cy="30%"
+                                labelLine={false}
+                                label={renderCustomizedLabel}
+                                outerRadius={80}
+                                fill="#8884d8"
+                                dataKey="value"
+                            >
+                                {total_data.map((entry, index) => (
+                                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                ))}
+                            </Pie>
+                            <Tooltip />
+                        </PieChart>
+
+
+                        <PieChart width={400} height={400}>
+                            <Pie
+                                data={total_data}
+                                cx="30%"
+                                cy="30%"
+                                labelLine={false}
+                                label={renderCustomizedLabel}
+                                outerRadius={80}
+                                fill="#8884d8"
+                                dataKey="value"
+                            >
+                                {total_data.map((entry, index) => (
+                                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                ))}
+                            </Pie>
+                            <Tooltip />
+                        </PieChart>
+
+
+                        <PieChart width={400} height={400}>
+                            <Pie
+                                data={total_data}
+                                cx="30%"
+                                cy="30%"
+                                labelLine={false}
+                                label={renderCustomizedLabel}
+                                outerRadius={80}
+                                fill="#8884d8"
+                                dataKey="value"
+                            >
+                                {total_data.map((entry, index) => (
+                                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                ))}
+                            </Pie>
+                            <Tooltip />
+                        </PieChart>
+
+
+      <div className="diff_charts">
+                        <br />
+                        <h3>Regular Beds</h3>
+                        <br />
+                        <br />
+
+                        <div className="bed_arrangement">
+                            {reg_bed_arr.map(i => (
+                                <div className="bed_item" >{(i.value === "t") ? <img src={require('../assets/hospital-bed.png')} width="40px" /> : <img src={require('../assets/multiply.png')} width="40px" />}</div>
+                            ))}
+
+                        </div>
+
+
+
+
+
+
+
+                        <div>
+                            <button class="open-button" onClick={() => OpenForm()}>Open Form</button>
+                            <br />
+                            <br />
+                            <div class="form-popup" id="myForm">
+                                <form class="form-container" method="post" action="/regular_bed_log">
+                                    <button type="button" class="btn cancel" onClick={() => CloseForm()}>X</button>
+
+                                    <h6><b>Patient's Name</b></h6>
+                                    <input type="text" placeholder="Enter Name" id="name" name="name" required />
+
+                                    <h6><b>Patient's Age</b></h6>
+                                    <input type="number" placeholder="Enter Age" id="age" name="age" required />
+
+                                    <button type="submit" class="btn">Login</button>
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div className="diff_charts">
+
+
+                    </div>
+                    <div className="diff_charts">
+
+
+                    </div>
+                    <div className="diff_charts">
+
+
+                    </div>
+
+
+
+//inside total_charts in details.js
+//import { PieChart, Pie, Cell, Tooltip } from "recharts";
+//
+    const COLORS = ["#1fd655", "#F0FD60", "#ff2c2c"];
+                    <br />
+
+                    <h1>Total Number of Beds</h1>
+
+                    <PieChart width={1000} height={600}>
+                        <Pie
+                            data={total_data}
+                            cx="45%"
+                            cy="40%"
+                            labelLine={false}
+                            label={renderCustomizedLabel}
+                            outerRadius={150}
+                            fill="#8884d8"
+                            dataKey="value"
+                        >
+                            {total_data.map((entry, index) => (
+                                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                            ))}
+                        </Pie>
+                        <Tooltip />
+                    </PieChart>
+
+    background: #f857a8;
+    background: -webkit-linear-gradient(45deg, #f857a8, #ff5858);
+    background: linear-gradient(45deg, #f857a8, #ff5858);
+    color: #fff;
+
+
+    //
+    
+app.post("/getemail", function (request, response) {
+
+
+
+    var appid = request.body.appid;
+    var password = request.body.password;
+    var vacancy = request.body.vacancy;
+    async function run() {
+        try {
+            await client.connect();
+            const db = client.db(dbName);
+            const col = db.collection("hospital_info");
+            const mydoc1 = await col.findOne({ "application_id": appid });
+            if (mydoc1.application_id == appid && mydoc1.password == password) {
+                await col.findOneAndUpdate({ "application_id": appid }, { $set: { "vacancy": vacancy } });
+            }
+        } catch (err) {
+            console.log(err.stack);
+        }
+        finally {
+            await client.close();
+        }
+    }
+    run().catch(console.dir);
+});
+
+
+app.post("/login", async (req, res) => {
+    try {
+        console.log(req.body.username);
+        res.redirect("/");
+    } catch (error) {
+        res.status(400).send(error);
+
+    }
+
+
+});
+
+
+app.post("/Pregister", function (request, response) {
+    var username = request.body.usernameregister;
+    var password = request.body.passwordregister;
+    var password1 = request.body.password1register;
+    var application_id = request.body.r_appid;
+    var vacancy = request.body.r_vacancy;
+    var contact = request.body.number;
+
+
+
+    async function run() {
+        try {
+            await client.connect();
+            console.log("Connected correctly to server");
+            const db = client.db(dbName);
+            const col = db.collection("hospital_info");
+            let personDocument = {
+                "name": username,
+                "application_id": application_id,
+                "vacancy": vacancy,
+                "contact": contact,
+                "password": password
+            }
+            if (password === password1) {
+                console.log("inserted")
+                console.log(username)
+                await col.insertOne(personDocument);
+
+            }
+            else {
+                console.log("invalidddd");
+            }
+
+        } catch (err) {
+            console.log(err.stack);
+        }
+        finally {
+            await client.close();
+        }
+    }
+    run().catch(console.dir);
+});
+
+
+app.post("/Pregister", function (request, response) {
+    var username = request.body.usernameregister;
+    var password = request.body.passwordregister;
+    var password1 = request.body.password1register;
+    var application_id = request.body.r_appid;
+    var vacancy = request.body.r_vacancy;
+    var contact = request.body.number;
+
+
+
+    async function run() {
+        try {
+            await client.connect();
+            console.log("Connected correctly to server");
+            const db = client.db(dbName);
+            const col = db.collection("hospital_info");
+            let personDocument = {
+                "name": username,
+                "application_id": application_id,
+                "vacancy": vacancy,
+                "contact": contact,
+                "password": password
+            }
+            if (password === password1) {
+                console.log("inserted")
+                console.log(username)
+                await col.insertOne(personDocument);
+
+            }
+            else {
+                console.log("invalidddd");
+            }
+
+        } catch (err) {
+            console.log(err.stack);
+        }
+        finally {
+            await client.close();
+        }
+    }
+    run().catch(console.dir);
+});
+
+
+//
+<Link to="/admin" class="nav-link"><span class="nav-link-span"><span class="u-nav">Admin</span></span></Link>
+
+//
+
+        <div class="listing-item">
+          <figure class="image">
+
+
+            <img src="https://medicaldialogues.in/h-upload/2022/08/30/184686-hospital-1.webp" alt="image" />
+
+            <div class="listing">
+              <h4>d.name</h4>
+              <h4>Total :d.vacancy</h4>
+              <h4>General : d.general_bed</h4>
+              <h4>Oxygen : d.oxygen_bed</h4>
+              <h4>ICU Bed :d.icu_bed</h4>
+              <h4>ventilator Bed : d.ventilator_bed</h4>
+              <br />
+
+
+
+            </div>
+            <h4><Link to="/details"><button type="button" class="button" >Book Now</button></Link></h4>
+
+
+          </figure>
+
+        </div>
+
+        <div class="listing-item">
+          <figure class="image">
+
+
+            <img src="https://medicaldialogues.in/h-upload/2022/08/30/184686-hospital-1.webp" alt="image" />
+
+            <div class="listing">
+              <h4>d.name</h4>
+              <h4>Total :d.vacancy</h4>
+              <h4>General : d.general_bed</h4>
+              <h4>Oxygen : d.oxygen_bed</h4>
+              <h4>ICU Bed :d.icu_bed</h4>
+              <h4>ventilator Bed : d.ventilator_bed</h4>
+              <br />
+
+
+
+            </div>
+            <h4><Link to="/details"><button type="button" class="button" >Book Now</button></Link></h4>
+
+
+          </figure>
+
+        </div>

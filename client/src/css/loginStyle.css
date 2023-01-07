@@ -1,0 +1,27 @@
+.login{
+    text-align: center;
+
+  }
+  
+  .content-login{
+    text-align: center;  
+  }
+
+ 
+  .form-control{
+    height: 50px;
+    width: 60%;
+    text-align: center;
+    border-radius: 15px;
+    font-size: large;
+  }  
+
+  .headline_login{
+    font-size: 60px;
+
+  }
+
+
+  .prof_register{
+    text-align: center;
+  }

@@ -1,0 +1,310 @@
+"dev":"nodemon script.js" is added in start of nodejs on 18/09/2022 for adding react to nodejs.
+
+Link for geeks for geeks :-  {https:wwwgeeksforgeeksorghow-to-connect-node-js-with-react-js#:~:text=export%20default%20App%3BReactJS%20is%20connected%20with%20NodeJS.}
+
+<form action="../../post" method="post" 
+              className="form"><button type="submit">Connected?</button></form>*/
+        
+
+              <form method="post" action="/post">
+
+                <h1 class="headline_login">Login Form</h1>
+                <br /><br />
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"><b>Username</b></label>
+                  <br />
+                  <input type="text" class="form-control" id="username" aria-describedby="emailHelp" name="username" />
+                  <br />
+          
+                </div>
+                <div class="mb-3">
+                  <br />
+                  <label for="exampleInputPassword1" class="form-label"><b>Password</b></label><br />
+                  <input type="text" class="form-control" id="password" name="password" /><br />
+          
+                </div>
+                <div class="mb-3">
+                  <br />
+                  <label for="exampleInputPassword1" class="form-label"><b>Vacancy</b></label><br /><br />
+                  <input type="text" class="form-control" id="vacancy" name="vacancy" /><br /><br />
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary">Submit</button>
+          
+              </form>    
+
+
+on 21/09/2022 is <div className="box_index">{index + 1}.</div> and in css 
+.box_index{
+  margin-left: 20px;
+  margin-top: 2.5%;
+  font-style: bold;
+  font-size: large;
+}
+
+ removed this line from package.json in client
+
+
+// removed from navbar.js and also removed the onClick={ProfessionalScroll} 
+ const HomeScroll = () =>{
+  window.scrollTo({
+    top: 0, 
+    behavior: 'smooth'
+  });
+};
+const ProfessionalScroll = () =>{
+  window.scrollTo({
+    top: 800, 
+    behavior: 'smooth'
+  });
+};
+
+
+
+
+
+
+
+<div className="box">
+            
+  <div className="box_items"><b>Hospital Name:- </b> {d.name}</div>
+  <div className="box_items"><b>Application ID:- </b> {d.application_id}</div>
+  <div className="box_items"><b>Vacancy:- </b>{d.vacancy}</div>
+  <div className="box_items"><b>Contact:- </b>{d.contact}</div>
+
+</div>
+
+
+linear-gradient(to left,rgba(0,0,0,0.7),rgba(0,0,0,0.9)), removed from app.css url() backgroung-image
+
+
+
+///
+<!-- <br />
+<br />
+<div>
+    <button class="open-button" onClick={() => OpenForm4()}>Open Form</button>
+    <br />
+    <br />
+    <div class="form-popup_ventilator" id="myForm4">
+        <form class="form-container" method="post" action="/ventilator_bed_log">
+            <button type="button" class="btn cancel" onClick={() => CloseForm1()}>Close Form</button>
+
+
+
+
+            <label>Patient's Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter name" required />
+
+
+            <h6><b>Patient's Age</b></h6>
+            <input type="number" placeholder="Enter Age" id="age" name="age" required />
+            {/*below are two input of hidden type*/}
+
+            <input type="hidden" name="type_bed" value="Ventilator Bed" />
+            <input type="hidden" name="from_name" value={location.state.id.name} />
+
+            <h6><b>Patient's Email</b></h6>
+            <input type="email" name="to_email" placeholder="Enter Email" />
+
+            <button type="submit" class="btn">Submit</button>
+
+
+
+
+
+
+
+
+
+        </form>
+    </div>
+
+</div>
+
+
+<br />
+<br />
+<div>
+    <button class="open-button" onClick={() => OpenForm3()}>Open Form</button>
+    <br />
+    <br />
+    <div class="form-popup_icu" id="myForm3">
+        <form class="form-container" method="post" action="/icu_bed_log">
+            <button type="button" class="btn cancel" onClick={() => CloseForm1()}>Close Form</button>
+
+
+
+
+            <label>Patient's Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter name" required />
+
+
+            <h6><b>Patient's Age</b></h6>
+            <input type="number" placeholder="Enter Age" id="age" name="age" required />
+            {/*below are two input of hidden type*/}
+
+            <input type="hidden" name="type_bed" value="ICU Bed" />
+            <input type="hidden" name="from_name" value={location.state.id.name} />
+
+            <h6><b>Patient's Email</b></h6>
+            <input type="email" name="to_email" placeholder="Enter Email" />
+
+            <button type="submit" class="btn">Submit</button>
+
+
+
+
+
+
+
+
+
+        </form>
+    </div>
+
+</div>
+
+
+
+
+
+<br />
+<br />
+<div>
+    <button class="open-button" onClick={() => OpenForm2()}>Open Form</button>
+    <br />
+    <br />
+    <div class="form-popup_oxygen" id="myForm2">
+        <form ref={form} onSubmit={sendEmail} class="form-container" method="post" action="/oxygen_bed_log">
+            <button type="button" class="btn cancel" onClick={() => CloseForm1()}>Close Form</button>
+
+
+
+
+            <label>Patient's Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter name" required />
+
+
+            <h6><b>Patient's Age</b></h6>
+            <input type="number" placeholder="Enter Age" id="age" name="age" required />
+            {/*below are two input of hidden type*/}
+
+            <input type="hidden" name="type_bed" value="Oxygen Bed" />
+            <input type="hidden" name="from_name" value={location.state.id.name} />
+
+            <h6><b>Patient's Email</b></h6>
+            <input type="email" name="to_email" placeholder="Enter Email" />
+
+            <button type="submit" class="btn">Submit</button>
+
+
+
+
+
+
+
+
+
+        </form>
+    </div>
+
+</div>
+
+
+<br />
+<br />
+<div>
+    <button class="open-button" onClick={() => OpenForm1()}>Open Form</button>
+    <br />
+    <br />
+    <div class="form-popup_regular" id="myForm1">
+        <form ref={form} onSubmit={sendEmail} class="form-container" method="post" action="/regular_bed_log">
+            <button type="button" class="btn cancel" onClick={() => CloseForm1()}>Close Form</button>
+
+
+
+
+            <label>Patient's Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter name" required />
+
+
+            <h6><b>Patient's Age</b></h6>
+            <input type="number" placeholder="Enter Age" id="age" name="age" required />
+            {/*below are two input of hidden type*/}
+
+            <input type="hidden" name="type_bed" value="General Bed" />
+            <input type="hidden" name="from_name" value={location.state.id.name} />
+
+            <input type="radio" id="html" name="fav_language" value="HTML" />
+            <label for="html">HTML</label><br />
+            <input type="radio" id="css" name="fav_language" value="CSS" />
+            <label for="css">CSS</label><br />
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
+            <label for="javascript">JavaScript</label>
+
+            <h6><b>Patient's Email</b></h6>
+            <input type="email" name="to_email" placeholder="Enter Email" />
+
+            <button type="submit" class="btn">Submit</button>
+
+
+
+
+
+
+
+
+
+        </form>
+    </div>
+
+</div> -->
+
+//className="submitButton"
+
+
+//03/01/2023
+<!-- 
+const OpenForm1 = () => {
+  document.getElementById("myForm1").style.display = "block";
+  window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: 'smooth',
+  });
+}
+const CloseForm1 = () => {
+  document.getElementById("myForm1").style.display = "none";
+}
+const OpenForm2 = () => {
+  document.getElementById("myForm2").style.display = "block";
+  window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: 'smooth',
+  });
+}
+const CloseForm2 = () => {
+  document.getElementById("myForm2").style.display = "none";
+}
+const OpenForm3 = () => {
+  document.getElementById("myForm3").style.display = "block";
+  window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: 'smooth',
+  });
+}
+const CloseForm3 = () => {
+  document.getElementById("myForm3").style.display = "none";
+}
+const OpenForm4 = () => {
+  document.getElementById("myForm4").style.display = "block";
+  window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: 'smooth',
+  });
+}
+const CloseForm4 = () => {
+  document.getElementById("myForm4").style.display = "none";
+} -->
+<!-- 
+//<Link to="/logs" class="nav-link"><span class="nav-link-span"><span class="u-nav">Logs</span></span></Link> -->
